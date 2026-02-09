@@ -30,26 +30,105 @@
       </p>
     </section>
 
+    <!-- ===================== GRAVITY LIGHT ===================== -->
+    <section id="gravity-light" class="section card">
+      <h3>Gravity Light – Design and Validation of Sustainable Energy Device</h3>
+
+      <p>
+        Designed, prototyped, and experimentally validated a gravity-powered lighting system that converts gravitational
+        potential energy into electrical energy using a compact compound planetary transmission and DC motor generator.
+      </p>
+
+      <p class="tag">Machine Design</p>
+      <p class="tag">Planetary Gear Train</p>
+      <p class="tag">3D Printing (PLA)</p>
+      <p class="tag">Experimental Validation</p>
+
+      <hr style="border:0;border-top:1px solid rgba(255,255,255,0.08);margin:14px 0;" />
+
+      <h4 style="margin:0 0 6px;">1) Design Requirements</h4>
+      <ul class="pill-list">
+        <li><strong>Target drop height:</strong> 1800 mm</li>
+        <li><strong>Target descent speed:</strong> 1.5 mm/s (target ~20 minutes runtime)</li>
+        <li><strong>Target mass:</strong> 12 kg (manual lift/reset)</li>
+        <li><strong>Goal:</strong> Generate usable voltage for LED lighting using gravity-driven motion</li>
+      </ul>
+
+      <h4 style="margin:14px 0 6px;">2) Concept & Key Engineering Decisions</h4>
+      <ul class="pill-list">
+        <li>Selected a <strong>compound planetary gear system</strong> to achieve extreme speed multiplication in a compact layout.</li>
+        <li>Iterated gear design for <strong>additive manufacturing</strong> (FDM): increased gear module for printability and strength.</li>
+        <li>Validated gear tooth strength using <strong>Lewis bending equation</strong> and selected <strong>PLA</strong> as printable material.</li>
+      </ul>
+
+      <h4 style="margin:14px 0 6px;">3) Final Gear Train (Optimized Design)</h4>
+      <ul class="pill-list">
+        <li><strong>Overall gear ratio:</strong> ~2734.7</li>
+        <li><strong>Input speed:</strong> ~0.083 RPM (from low-speed gravitational motion)</li>
+        <li><strong>Output speed:</strong> ~227 RPM (target motor RPM range)</li>
+        <li><strong>Module:</strong> 1.5 (improved tooth strength + printability)</li>
+        <li><strong>Planet ring gear:</strong> 115 teeth, ~172.5 mm diameter</li>
+      </ul>
+
+      <h4 style="margin:14px 0 6px;">4) Material & Structural Validation</h4>
+      <ul class="pill-list">
+        <li><strong>Material:</strong> PLA (FDM compatible, low warping, smooth surface)</li>
+        <li><strong>Max calculated gear bending stress:</strong> ~14.47 MPa</li>
+        <li><strong>PLA tensile strength reference:</strong> ~40–60 MPa → stress within safe limits</li>
+      </ul>
+
+      <h4 style="margin:14px 0 6px;">5) Prototype & Experimental Results</h4>
+      <ul class="pill-list">
+        <li>Gear train assembled and tested: <strong>smooth motion</strong>, no tooth skipping/binding or visible deformation.</li>
+        <li>Motor selection test:
+          <ul>
+            <li><strong>DSMP320-24V:</strong> could not be driven under gravity load (starting torque + losses too high).</li>
+            <li><strong>Allied 990412018105-12V:</strong> successful gravity-driven operation.</li>
+          </ul>
+        </li>
+        <li>Experimental test conditions (validated):
+          <ul>
+            <li><strong>Dead weight:</strong> 5.4 kg</li>
+            <li><strong>Measured drop speed:</strong> ~21 mm/s</li>
+            <li><strong>Motor speed:</strong> ~1200 RPM</li>
+            <li><strong>Max voltage:</strong> ~2 V</li>
+          </ul>
+        </li>
+        <li><strong>Illumination time:</strong> ~2 minutes achieved (main limitation: excessive dropping speed)</li>
+      </ul>
+
+      <h4 style="margin:14px 0 6px;">6) Findings & Improvements</h4>
+      <ul class="pill-list">
+        <li>Runtime is governed by <strong>dropping speed</strong> more than total gravitational energy.</li>
+        <li>Rubber-band transmission identified as a major loss source (slip + elastic losses + pre-tension).</li>
+        <li>Proposed optimization:
+          <ul>
+            <li>Redesign large pulley to ~120 mm to reduce overall ratio to ~1750.</li>
+            <li>Replace rubber band with <strong>timing belt / chain drive / direct gear coupling</strong> for better efficiency and speed control.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p style="margin-top:14px;">
+        <strong>Project report:</strong> <a href="gravity-light-report.pdf" target="_blank" rel="noopener">Download PDF</a>
+      </p>
+
+      <p style="margin-top:10px; color: rgba(255,255,255,0.75);">
+        Next upgrade for this page: add CAD renders (assembly + gears), exploded view, and the test setup photo/video.
+      </p>
+    </section>
+
+    <!-- ===================== PLACEHOLDERS FOR YOUR NEXT PROJECTS ===================== -->
     <section id="screw-press" class="section card">
       <h3>20 kN Single-Column Screw Press</h3>
       <p><strong>Status:</strong> Summary now — detailed write-up coming soon.</p>
       <p><strong>Highlights:</strong> Concept design → CAD assembly → component selection → validation approach.</p>
-      <p><strong>Tools:</strong> CAD (SolidWorks/CATIA), Machine Design fundamentals, basic FEA.</p>
-      <p><em>Next:</em> I will add images (assembly, exploded view, key parts, and drawings) and calculations.</p>
     </section>
 
     <section id="generative-bracket" class="section card">
       <h3>Generative Design Bracket + Nonlinear FEA</h3>
       <p><strong>Status:</strong> Summary now — detailed write-up coming soon.</p>
       <p><strong>Highlights:</strong> Design space, constraints, optimization outcome, and performance comparison.</p>
-      <p><strong>Tools:</strong> Generative design workflow + FEA study.</p>
-    </section>
-
-    <section id="reverse-connecting-rod" class="section card">
-      <h3>Reverse Engineering: Connecting Rod (3D Prototype)</h3>
-      <p><strong>Status:</strong> Summary now — detailed write-up coming soon.</p>
-      <p><strong>Highlights:</strong> Scan-based data acquisition → CAD reconstruction → prototype model.</p>
-      <p><strong>Tools:</strong> Scanned data handling + CAD modeling.</p>
     </section>
 
     <section class="section card" id="contact">
