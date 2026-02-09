@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name | Mechanical Design Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <h1>Your Name</h1>
+        <p class="subtitle">Mechanical Design Engineer (Intern) • CAD • Manufacturing-aware Design</p>
+      </div>
+
+      <nav class="nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h2>I design functional, manufacturable mechanical parts.</h2>
+        <p>
+          I’m a Mechanical Engineering student focused on CAD modeling, drawings (GD&T basics),
+          and design decisions backed by engineering fundamentals.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="projects.html">View Projects</a>
+          <a class="btn-outline" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Quick Skills</h3>
+        <ul class="pill-list">
+          <li>SolidWorks / CATIA / Creo</li>
+          <li>Engineering Drawings</li>
+          <li>DFM / DFA</li>
+          <li>Basic FEA</li>
+          <li>Materials & Manufacturing</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Featured Projects</h3>
+
+      <div class="grid">
+        <a class="project-card" href="projects.html#project1">
+          <h4>Project 1 – Mechanism / Product</h4>
+          <p>CAD assembly, key constraints, drawings, and manufacturing notes.</p>
+          <span class="tag">CAD • Assembly • Drawings</span>
+        </a>
+
+        <a class="project-card" href="projects.html#project2">
+          <h4>Project 2 – Structural Component</h4>
+          <p>Design requirements, material choice, factor of safety, and validation.</p>
+          <span class="tag">Design • FEA • DFM</span>
+        </a>
+
+        <a class="project-card" href="projects.html#project3">
+          <h4>Project 3 – Sheet Metal / Fixture</h4>
+          <p>Flat pattern, bend rules, tolerances, and assembly plan.</p>
+          <span class="tag">Sheet Metal • DFA</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h3>Contact</h3>
+      <div class="card">
+        <p><strong>Email:</strong> your.email@example.com</p>
+        <p><strong>LinkedIn:</strong> linkedin.com/in/yourname</p>
+        <p><strong>Location:</strong> Luxembourg / Remote</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name • Mechanical Design Portfolio</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
