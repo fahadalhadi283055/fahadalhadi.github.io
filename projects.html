@@ -124,42 +124,31 @@
 
   <span class="tag">Topology Optimization</span>
   <span class="tag">Fusion 360</span>
-  <span class="tag">Design for AM (FDM)</span>
+  <span class="tag">Design for AM</span>
   <span class="tag">FEA Validation</span>
 
   <hr style="border:0;border-top:1px solid rgba(255,255,255,0.08);margin:16px 0;" />
 
   <h4>Visual Summary (Design Space → Topology Result → Final CAD → FEA)</h4>
-  <p class="subtitle">
-    Workflow showing the constrained design space, topology-optimized mesh body, refined CAD model,
-    and stress validation.
-  </p>
-
   <div class="image-row">
-    <img src="images/topology-bellcrank/designspace.png" alt="Design space / initial solid block">
-    <img src="images/topology-bellcrank/meshbody.png" alt="Topology optimization mesh/body result">
-    <img src="images/topology-bellcrank/bellcrank.png" alt="Final bell crank CAD model">
-    <img src="images/topology-bellcrank/stress.png" alt="Stress analysis (von Mises)">
+    <img src="images/topology-bellcrank/designspace.png" alt="Design space / initial block">
+    <img src="images/topology-bellcrank/meshbody.png" alt="Topology optimization mesh body">
+    <img src="images/topology-bellcrank/bellcrank.png" alt="Final refined CAD model">
+    <img src="images/topology-bellcrank/stress.png" alt="von Mises stress result">
   </div>
-
-  <h4>Problem Setup (Constraints)</h4>
-  <ul class="pill-list">
-    <li>Design must stay inside a fixed design space (no geometry outside the envelope). :contentReference[oaicite:1]{index=1}</li>
-    <li>Maximum applied load: 10 kN. :contentReference[oaicite:2]{index=2}</li>
-    <li>Target manufacturing process: FDM (additive manufacturing). :contentReference[oaicite:3]{index=3}</li>
-  </ul>
 
   <h4>Key Engineering Outcomes</h4>
   <ul class="pill-list">
-    <li>Converted topology output (mesh body) into a smooth, manufacturable CAD design.</li>
-    <li>Maintained functional interfaces (mounting holes / load interfaces) as preserved regions.</li>
-    <li>Validated the refined geometry using stress analysis to confirm structural performance.</li>
+    <li>Converted topology mesh output into a manufacturable CAD model.</li>
+    <li>Preserved mounting/load interfaces while removing non-critical material.</li>
+    <li>Validated refined geometry using stress analysis.</li>
   </ul>
 
   <p style="margin-top:12px; color: rgba(255,255,255,0.75);">
-    Note: Detailed lecture slides are not published due to confidentiality restrictions. :contentReference[oaicite:4]{index=4}
+    Detailed slides/report available on request.
   </p>
 </section>
+
 
 <!-- ===================== other ===================== -->
     
