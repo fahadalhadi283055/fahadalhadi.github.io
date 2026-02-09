@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <h1>Your Name</h1>
+        <p class="subtitle">Mechanical Design Portfolio</p>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h3>Projects</h3>
+      <p class="subtitle">
+        Each project is written like an engineering mini-report: requirements → design → validation → manufacturability.
+      </p>
+    </section>
+
+    <section id="project1" class="section card">
+      <h3>Project 1 – [Title]</h3>
+      <p><strong>Goal:</strong> What problem did you solve?</p>
+      <p><strong>Tools:</strong> SolidWorks, drawings, etc.</p>
+      <p><strong>Key Decisions:</strong> material choice, mechanism, constraints.</p>
+      <p><strong>Manufacturing:</strong> how it would be made + tolerances.</p>
+      <p><strong>Outcome:</strong> results + what you would improve.</p>
+      <p><em>Add images:</em> upload images to the repo and reference them like <code>images/project1_assembly.png</code></p>
+    </section>
+
+    <section id="project2" class="section card">
+      <h3>Project 2 – [Title]</h3>
+      <p><strong>Goal:</strong> …</p>
+      <p><strong>Requirements:</strong> load, size, factor of safety.</p>
+      <p><strong>Validation:</strong> hand calc / FEA summary.</p>
+      <p><strong>Manufacturing:</strong> …</p>
+    </section>
+
+    <section id="project3" class="section card">
+      <h3>Project 3 – [Title]</h3>
+      <p><strong>Goal:</strong> …</p>
+      <p><strong>Sheet metal:</strong> bend rules, flat pattern, assembly plan.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
