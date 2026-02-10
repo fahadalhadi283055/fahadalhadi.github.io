@@ -6,12 +6,16 @@
   <title>Fahad Al Hadi | Mechanical Design Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- ================= HEADER ================= -->
   <header class="site-header">
     <div class="container">
       <div class="brand">
         <h1>Fahad Al Hadi</h1>
-        <p class="subtitle">Mechanical Engineer | Industrial and Manufacturing Engineer • CAD/CAE • Sustainable Product Design</p>
+        <p class="subtitle">
+          Mechanical Design Engineer • CAD/CAE • Manufacturing-Ready Design
+        </p>
       </div>
 
       <nav class="nav">
@@ -23,19 +27,23 @@
     </div>
   </header>
 
+  <!-- ================= MAIN ================= -->
   <main class="container">
+
+    <!-- ================= HERO ================= -->
     <section class="hero">
       <div>
         <h2>Mechanical Design Engineer</h2>
-<p class="hero-tagline">
-  CAD-Driven Design • Manufacturing-Ready Parts • Structural Validation
-</p>
+        <p class="hero-tagline">
+          CAD-Driven Design • Manufacturing-Ready Parts • Structural Validation
+        </p>
 
         <p>
-          I’m a Mechanical & Industrial Engineer currently pursuing a Master’s in Sustainable Product Creation
-          at the University of Luxembourg. My focus is CAD modeling, mechanical design, engineering drawings,
-          and validation using basic FEA — with strong attention to manufacturability and sustainability.
+          Mechanical & Industrial Engineer pursuing a Master’s in Sustainable Product Creation
+          at the University of Luxembourg. Experienced in CAD modeling, mechanical design,
+          engineering drawings, and basic FEA with strong focus on manufacturability and sustainability.
         </p>
+
         <div class="hero-actions">
           <a class="btn" href="projects.html">View Projects</a>
           <a class="btn-outline" href="#contact">Contact Me</a>
@@ -48,93 +56,120 @@
           <li>Autodesk Inventor • Fusion 360 • SolidWorks • CATIA</li>
           <li>CAD Assemblies • Engineering Drawings</li>
           <li>Basic FEA (ANSYS / Inventor Nastran)</li>
-          <li>DFM/DFA • Additive Manufacturing</li>
+          <li>DFM / DFA • Additive Manufacturing</li>
           <li>Lean Six Sigma • Process Improvement</li>
         </ul>
       </div>
     </section>
 
+    <!-- ================= FEATURED PROJECTS ================= -->
     <section class="section">
       <h3>Featured Projects</h3>
 
       <div class="grid">
         <a class="project-card" href="projects.html#gravity-light">
           <h4>Gravity Light – Sustainable Energy Device</h4>
-          <p>Compound planetary gear train, 3D printed prototype, and experimental validation.</p>
-          <span class="tag">Machine Design • Gears • Prototype</span>
+          <p>
+            Compound planetary gear train, prototype, and experimental validation.
+          </p>
+          <span class="tool-pill">Autodesk Inventor</span>
+          <span class="tag">Machine Design</span>
         </a>
 
         <a class="project-card" href="projects.html#screw-press">
           <h4>20 kN Single-Column Screw Press</h4>
-          <p>Concept-to-assembly mechanical design and validation approach.</p>
-          <span class="tag">CAD • Machine Design • Assembly</span>
+          <p>
+            Manufacturing-aware mechanical design and structural validation.
+          </p>
+          <span class="tool-pill">Fusion 360</span>
+          <span class="tag">Machine Design</span>
         </a>
 
-        <a class="project-card" href="projects.html#generative-bracket">
-          <h4>Generative Design Bracket + Nonlinear FEA</h4>
-          <p>Constraints, design space, and structural performance comparison.</p>
-          <span class="tag">Generative • FEA • Optimization</span>
+        <a class="project-card" href="projects.html#topology-bellcrank">
+          <h4>Topology Optimization – Bell Crank</h4>
+          <p>
+            Topology optimization, refined CAD, and FEA validation.
+          </p>
+          <span class="tool-pill">Fusion 360</span>
+          <span class="tag">Topology</span>
         </a>
       </div>
     </section>
+
+    <!-- ================= OTHER PROJECTS SLIDER ================= -->
     <section class="section">
-  <h3>Other Projects</h3>
-  <p class="subtitle">Scroll horizontally or use the arrows. Add more cards anytime.</p>
+      <h3>Other Projects</h3>
+      <p class="subtitle">Scroll horizontally or use arrows. Add more projects anytime.</p>
 
-  <div class="slider">
-    <button class="slider-btn left" type="button" aria-label="Scroll left"
-      onclick="scrollSlider('other-projects', -1)">‹</button>
+      <div class="slider">
+        <button class="slider-btn left" type="button"
+          onclick="scrollSlider('other-projects', -1)">‹</button>
 
-    <div id="other-projects" class="slider-track">
-      <!-- Copy/paste this card block to add more projects -->
-      <a class="slider-card" href="projects.html#project-x">
-        <h4>Project X – Title Here</h4>
-        <p>1–2 lines: what you designed + why it matters.</p>
-        <span class="tool-pill">Fusion 360</span>
-        <span class="tag">CAD</span>
-      </a>
+        <div id="other-projects" class="slider-track">
 
-      <a class="slider-card" href="projects.html#project-y">
-        <h4>Project Y – Title Here</h4>
-        <p>Short description (manufacturing, analysis, mechanism, etc.).</p>
-        <span class="tool-pill">Autodesk Inventor</span>
-        <span class="tag">FEA</span>
-      </a>
+          <!-- Copy this card to add more projects -->
+          <a class="slider-card" href="projects.html#project-x">
+            <h4>Fixture / Jig Design</h4>
+            <p>Manufacturing fixture designed for accuracy and repeatability.</p>
+            <span class="tool-pill">Fusion 360</span>
+            <span class="tag">DFM</span>
+          </a>
 
-      <a class="slider-card" href="projects.html#project-z">
-        <h4>Project Z – Title Here</h4>
-        <p>Short description. Keep it simple and technical.</p>
-        <span class="tool-pill">Fusion 360</span>
-        <span class="tag">DFM</span>
-      </a>
+          <a class="slider-card" href="projects.html#project-y">
+            <h4>Reverse Engineering – Connecting Rod</h4>
+            <p>Scan-based reconstruction and CAD prototyping.</p>
+            <span class="tool-pill">Autodesk Inventor</span>
+            <span class="tag">Reverse Eng.</span>
+          </a>
 
-      <!-- Add more cards here in the future -->
-    </div>
+          <a class="slider-card" href="projects.html#project-z">
+            <h4>Sheet-Metal Product Design</h4>
+            <p>Manufacturable design with bend rules and assembly planning.</p>
+            <span class="tool-pill">Fusion 360</span>
+            <span class="tag">Sheet Metal</span>
+          </a>
 
-    <button class="slider-btn right" type="button" aria-label="Scroll right"
-      onclick="scrollSlider('other-projects', 1)">›</button>
-  </div>
-</section>
+        </div>
 
+        <button class="slider-btn right" type="button"
+          onclick="scrollSlider('other-projects', 1)">›</button>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
     <section id="contact" class="section">
       <h3>Contact</h3>
       <div class="card">
         <p><strong>Email:</strong> <a href="mailto:fahadalhadi283055@gmail.com">fahadalhadi283055@gmail.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+352661596121">(+352) 661596121</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fahad-al-hadi-99b735118/" target="_blank" rel="noopener">fahad-al-hadi-99b735118</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+352661596121">(+352) 661 596 121</a></p>
+        <p><strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/fahad-al-hadi-99b735118/" target="_blank" rel="noopener">
+            fahad-al-hadi-99b735118
+          </a>
+        </p>
         <p><strong>Location:</strong> Differdange, Luxembourg</p>
       </div>
     </section>
+
   </main>
 
+  <!-- ================= FOOTER ================= -->
   <footer class="footer">
     <div class="container">
       <p>© <span id="year"></span> Fahad Al Hadi • Mechanical Design Portfolio</p>
     </div>
   </footer>
 
+  <!-- ================= SCRIPTS ================= -->
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    function scrollSlider(id, direction) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const amount = Math.min(900, el.clientWidth * 0.9);
+      el.scrollBy({ left: direction * amount, behavior: "smooth" });
+    }
   </script>
 </body>
 </html>
