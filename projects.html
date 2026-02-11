@@ -120,4 +120,86 @@
       <span class="tag">Topology Optimization</span>
       <span class="tag">Design for AM</span>
       <span class="tag">FEA Validation</span>
-      <span class="tag">Fus
+      <span class="tag">Fusion 360</span>
+
+      <hr style="border:0;border-top:1px solid rgba(255,255,255,0.08);margin:16px 0;" />
+
+      <h4>Workflow (Design Space → Mesh → Final CAD → FEA)</h4>
+
+      <div class="image-row">
+        <img src="images/topology-bellcrank/designspace.png" alt="Design space">
+        <img src="images/topology-bellcrank/meshbody.png" alt="Topology mesh">
+        <img src="images/topology-bellcrank/bellcrank.png" alt="Final CAD model">
+        <img src="images/topology-bellcrank/stress.png" alt="Stress analysis">
+      </div>
+
+      <h4>Key Outcomes</h4>
+      <ul class="pill-list">
+        <li>Removed non-critical material while preserving functional interfaces.</li>
+        <li>Rebuilt optimized geometry as smooth parametric CAD.</li>
+        <li>Validated stress distribution under load.</li>
+      </ul>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- ============ 4. REVERSE ENGINEERING PROJECT ============= -->
+    <!-- ========================================================== -->
+    <section id="reverse-connecting-rod" class="section card">
+      <h3>Reverse Engineering – Connecting Rod Cap (Scan → CAD → Drawing)</h3>
+
+      <p>
+        Reconstructed a connecting rod cap using scanned data acquisition,
+        rebuilt functional geometry in CAD, and produced a dimensioned manufacturing drawing.
+      </p>
+
+      <span class="tag">Reverse Engineering</span>
+      <span class="tag">CAD Reconstruction</span>
+      <span class="tag">Engineering Drawing</span>
+      <span class="tag">Autodesk Inventor</span>
+
+      <hr style="border:0;border-top:1px solid rgba(255,255,255,0.08);margin:16px 0;" />
+
+      <h4>Workflow (Scan → Final CAD → Drawing)</h4>
+
+      <div class="image-row">
+        <img src="images/reverse-connecting-rod/scan.png" alt="Scanned reference">
+        <img src="images/reverse-connecting-rod/final.png" alt="Final CAD reconstruction">
+        <img src="images/reverse-connecting-rod/drawing.png" alt="Engineering drawing">
+      </div>
+
+      <h4>Key Outcomes</h4>
+      <ul class="pill-list">
+        <li>Converted scan data into parametric CAD geometry.</li>
+        <li>Reconstructed bolt interfaces and seating surfaces.</li>
+        <li>Generated manufacturing drawing with full dimensions.</li>
+      </ul>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section card" id="contact">
+      <h3>Contact</h3>
+      <p><strong>Email:</strong> <a href="mailto:fahadalhadi283055@gmail.com">fahadalhadi283055@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+352661596121">(+352) 661 596 121</a></p>
+      <p><strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/fahad-al-hadi-99b735118/" target="_blank" rel="noopener">
+          fahad-al-hadi-99b735118
+        </a>
+      </p>
+      <p><strong>Location:</strong> Differdange, Luxembourg</p>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Fahad Al Hadi</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
