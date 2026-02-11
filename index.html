@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
   <!-- ================= HEADER ================= -->
   <header class="site-header">
     <div class="container">
@@ -40,8 +41,8 @@
 
         <p>
           Mechanical & Industrial Engineer pursuing a Master’s in Sustainable Product Creation
-          at the University of Luxembourg. Experienced in CAD modeling, mechanical design,
-          engineering drawings, and basic FEA with strong focus on manufacturability and sustainability.
+          at the University of Luxembourg. Specialized in mechanical system design,
+          CAD modeling, engineering drawings, and structural validation using FEA.
         </p>
 
         <div class="hero-actions">
@@ -51,13 +52,13 @@
       </div>
 
       <div class="card">
-        <h3>Quick Skills</h3>
+        <h3>Core Skills</h3>
         <ul class="pill-list">
           <li>Autodesk Inventor • Fusion 360 • SolidWorks • CATIA</li>
-          <li>CAD Assemblies • Engineering Drawings</li>
-          <li>Basic FEA (ANSYS / Inventor Nastran)</li>
-          <li>DFM / DFA • Additive Manufacturing</li>
-          <li>Lean Six Sigma • Process Improvement</li>
+          <li>Mechanical Design • Assemblies • Engineering Drawings</li>
+          <li>Static FEA • Stress & Safety Factor Analysis</li>
+          <li>DFM/DFA • Additive Manufacturing</li>
+          <li>Lean Six Sigma • Process Optimization</li>
         </ul>
       </div>
     </section>
@@ -67,6 +68,7 @@
       <h3>Featured Projects</h3>
 
       <div class="grid">
+
         <a class="project-card" href="projects.html#gravity-light">
           <h4>Gravity Light – Sustainable Energy Device</h4>
           <p>
@@ -88,43 +90,46 @@
         <a class="project-card" href="projects.html#topology-bellcrank">
           <h4>Topology Optimization – Bell Crank</h4>
           <p>
-            Topology optimization, refined CAD, and FEA validation.
+            Topology optimization, refined CAD model, and FEA validation.
           </p>
           <span class="tool-pill">Fusion 360</span>
-          <span class="tag">Topology</span>
+          <span class="tag">Topology Optimization</span>
         </a>
+
       </div>
     </section>
 
-    <!-- ================= OTHER PROJECTS SLIDER ================= -->
+    <!-- ================= OTHER PROJECTS (SLIDER) ================= -->
     <section class="section">
       <h3>Other Projects</h3>
-      <p class="subtitle">Scroll horizontally or use arrows. Add more projects anytime.</p>
+      <p class="subtitle">
+        Scroll horizontally or use the arrows. Additional projects can be added anytime.
+      </p>
 
       <div class="slider">
+
         <button class="slider-btn left" type="button"
           onclick="scrollSlider('other-projects', -1)">‹</button>
 
         <div id="other-projects" class="slider-track">
 
-          <!-- Copy this card to add more projects -->
-          <a class="slider-card" href="projects.html#project-x">
+          <a class="slider-card" href="projects.html#reverse-connecting-rod">
+            <h4>Reverse Engineering – Connecting Rod Cap</h4>
+            <p>Scan-based CAD reconstruction and manufacturing drawing.</p>
+            <span class="tool-pill">Autodesk Inventor</span>
+            <span class="tag">Reverse Engineering</span>
+          </a>
+
+          <a class="slider-card" href="#">
             <h4>Fixture / Jig Design</h4>
-            <p>Manufacturing fixture designed for accuracy and repeatability.</p>
+            <p>Precision fixture design for repeatable manufacturing setup.</p>
             <span class="tool-pill">Fusion 360</span>
             <span class="tag">DFM</span>
           </a>
 
-          <a class="slider-card" href="projects.html#project-y">
-            <h4>Reverse Engineering – Connecting Rod</h4>
-            <p>Scan-based reconstruction and CAD prototyping.</p>
-            <span class="tool-pill">Autodesk Inventor</span>
-            <span class="tag">Reverse Eng.</span>
-          </a>
-
-          <a class="slider-card" href="projects.html#project-z">
-            <h4>Sheet-Metal Product Design</h4>
-            <p>Manufacturable design with bend rules and assembly planning.</p>
+          <a class="slider-card" href="#">
+            <h4>Sheet Metal Product Design</h4>
+            <p>Bend allowance design and manufacturable assembly planning.</p>
             <span class="tool-pill">Fusion 360</span>
             <span class="tag">Sheet Metal</span>
           </a>
@@ -133,6 +138,7 @@
 
         <button class="slider-btn right" type="button"
           onclick="scrollSlider('other-projects', 1)">›</button>
+
       </div>
     </section>
 
@@ -140,9 +146,17 @@
     <section id="contact" class="section">
       <h3>Contact</h3>
       <div class="card">
-        <p><strong>Email:</strong> <a href="mailto:fahadalhadi283055@gmail.com">fahadalhadi283055@gmail.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+352661596121">(+352) 661 596 121</a></p>
-        <p><strong>LinkedIn:</strong>
+        <p><strong>Email:</strong> 
+          <a href="mailto:fahadalhadi283055@gmail.com">
+            fahadalhadi283055@gmail.com
+          </a>
+        </p>
+        <p><strong>Phone:</strong> 
+          <a href="tel:+352661596121">
+            (+352) 661 596 121
+          </a>
+        </p>
+        <p><strong>LinkedIn:</strong> 
           <a href="https://www.linkedin.com/in/fahad-al-hadi-99b735118/" target="_blank" rel="noopener">
             fahad-al-hadi-99b735118
           </a>
@@ -171,5 +185,6 @@
       el.scrollBy({ left: direction * amount, behavior: "smooth" });
     }
   </script>
+
 </body>
 </html>
