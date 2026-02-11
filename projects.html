@@ -6,7 +6,9 @@
   <title>Projects | Fahad Al Hadi</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- ================= HEADER ================= -->
   <header class="site-header">
     <div class="container">
       <div class="brand">
@@ -22,154 +24,100 @@
     </div>
   </header>
 
+  <!-- ================= MAIN ================= -->
   <main class="container">
+
     <section class="section">
       <h3>Projects</h3>
       <p class="subtitle">
-        Each project is written as an engineering mini-report: requirements → design → validation → manufacturability.
+        Each project demonstrates engineering workflow: requirements → design → validation → manufacturability.
       </p>
     </section>
 
-    <!-- ===================== GRAVITY LIGHT ===================== -->
+    <!-- ========================================================== -->
+    <!-- ===================== 1. GRAVITY LIGHT =================== -->
+    <!-- ========================================================== -->
     <section id="gravity-light" class="section card">
-      <h3>Gravity Light – Design and Validation of a Sustainable Energy Device</h3>
+      <h3>Gravity Light – Design & Validation of a Sustainable Energy Device</h3>
 
       <p>
-        Designed, prototyped, and experimentally validated a gravity-powered lighting system that converts
-        gravitational potential energy into electrical energy using a compact compound planetary gear train
-        and DC motor generator.
+        Designed and validated a gravity-powered lighting system converting gravitational potential energy
+        into electrical output using a compound planetary gear train and DC motor generator.
       </p>
 
       <span class="tag">Mechanical Design</span>
       <span class="tag">Planetary Gear Train</span>
       <span class="tag">Additive Manufacturing</span>
-      <span class="tag">Experimental Validation</span>
+      <span class="tag">Autodesk Inventor</span>
 
       <hr style="border:0;border-top:1px solid rgba(255,255,255,0.08);margin:16px 0;" />
 
       <h4>Design Overview (Drawing → CAD → Prototype → Test)</h4>
-      <p class="subtitle">
-        A quick visual overview of the complete engineering flow: detailed drawing, CAD assembly,
-        physical prototype, and experimental validation setup.
-      </p>
 
       <div class="image-row">
-        <img src="images/gravity-light/drawing-gear-train.png" alt="Gear train engineering drawing">
-        <img src="images/gravity-light/cad-assembly.png" alt="CAD assembly model">
+        <img src="images/gravity-light/drawing-gear-train.png" alt="Engineering drawing">
+        <img src="images/gravity-light/cad-assembly.png" alt="CAD assembly">
         <img src="images/gravity-light/prototype-printed.png" alt="3D printed prototype">
-        <img src="images/gravity-light/experimental-test.png" alt="Experimental validation setup">
+        <img src="images/gravity-light/experimental-test.png" alt="Experimental setup">
       </div>
 
-      <h4>Key Engineering Outcomes</h4>
+      <h4>Key Outcomes</h4>
       <ul class="pill-list">
-        <li>Achieved extreme speed amplification using a compact compound planetary gear train (~2700:1).</li>
-        <li>Validated PLA gear strength using Lewis bending stress theory.</li>
-        <li>Successfully demonstrated gravity-driven motor operation and LED illumination.</li>
-        <li>Identified transmission losses and proposed design improvements for runtime optimization.</li>
+        <li>Achieved ~2700:1 gear ratio for speed amplification.</li>
+        <li>Validated PLA gear strength using Lewis bending stress.</li>
+        <li>Demonstrated gravity-driven LED illumination.</li>
+        <li>Identified transmission losses and proposed improvements.</li>
       </ul>
-
-      <p style="margin-top:12px; color: rgba(255,255,255,0.75);">
-        Detailed calculations and full technical report are available on request.
-      </p>
     </section>
 
-    <!-- ===================== Screw Press ===================== -->
+    <!-- ========================================================== -->
+    <!-- ===================== 2. SCREW PRESS ===================== -->
+    <!-- ========================================================== -->
     <section id="screw-press" class="section card">
-      <h3>Single-Column Screw Press – Design, Manufacturing & Validation</h3>
+      <h3>20 kN Single-Column Screw Press – Design & Structural Validation</h3>
 
       <p>
-        Designed a compact single-column screw press focusing on manufacturability, structural integrity,
-        and safe load transfer. The project covers casting-oriented design, post-machining features,
-        full assembly, and static structural validation using FEA.
+        Designed a compact single-column screw press with focus on casting feasibility,
+        machining features, load transfer, and static structural validation.
       </p>
 
       <span class="tag">Machine Design</span>
       <span class="tag">Casting & Machining</span>
-      <span class="tag">CAD Assembly</span>
-      <span class="tag">Static Structural FEA</span>
+      <span class="tag">Static FEA</span>
+      <span class="tag">Fusion 360</span>
 
       <hr style="border:0;border-top:1px solid rgba(255,255,255,0.08);margin:16px 0;" />
 
-      <h4>Design to Validation (Assembly → Cast → Machined → FEA)</h4>
-      <p class="subtitle">
-        Visual summary of manufacturing-aware design and structural verification: assembly model,
-        cast geometry, machined features, safety factor, and von Mises stress plot.
-      </p>
+      <h4>Design to Validation Workflow</h4>
 
       <div class="image-row">
-        <img src="images/screw-press/assembly.png" alt="Screw press CAD assembly">
-        <img src="images/screw-press/cast-part.png" alt="Cast part design">
+        <img src="images/screw-press/assembly.png" alt="Assembly model">
+        <img src="images/screw-press/cast-part.png" alt="Cast part">
         <img src="images/screw-press/machined-part.png" alt="Machined part">
         <img src="images/screw-press/safety-factor.png" alt="Safety factor plot">
-        <img src="images/screw-press/stress-analysis.png" alt="von Mises stress analysis">
+        <img src="images/screw-press/stress-analysis.png" alt="Von Mises stress">
       </div>
 
-      <h4>Key Engineering Outcomes</h4>
+      <h4>Key Outcomes</h4>
       <ul class="pill-list">
-        <li>Designed geometry suitable for casting followed by precision machining.</li>
-        <li>Ensured controlled load transfer through the column and base plate.</li>
-        <li>Validated structural safety with minimum safety factor ≈ 1.47.</li>
-        <li>Identified stress concentration zones and addressed them via fillets and geometry refinement.</li>
+        <li>Designed casting-ready geometry with proper fillets and thickness.</li>
+        <li>Validated structural safety (min safety factor ≈ 1.47).</li>
+        <li>Optimized stress concentration zones.</li>
       </ul>
     </section>
 
-    <!-- ===================== Bracket ===================== -->
-    <section id="generative-bracket" class="section card">
-  <h3>Topology Optimization – Bell Crank (Additive Manufacturing)</h3>
+    <!-- ========================================================== -->
+    <!-- ===================== 3. TOPOLOGY ======================== -->
+    <!-- ========================================================== -->
+    <section id="topology-bellcrank" class="section card">
+      <h3>Topology Optimization – Bell Crank (Additive Manufacturing)</h3>
 
-  <p>
-    Topology-optimized a bell crank bracket for minimum mass / maximum stiffness inside a fixed design space,
-    then converted the topology result into a clean, manufacturable CAD model and validated it with FEA.
-  </p>
+      <p>
+        Performed topology optimization inside a fixed design space to reduce mass while
+        maintaining stiffness, then converted the mesh output into a manufacturable CAD model.
+      </p>
 
-  <span class="tag">Topology Optimization</span>
-  <span class="tag">Fusion 360</span>
-  <span class="tag">Design for AM</span>
-  <span class="tag">FEA Validation</span>
-
-  <hr style="border:0;border-top:1px solid rgba(255,255,255,0.08);margin:16px 0;" />
-
-  <h4>Visual Summary (Design Space → Topology Result → Final CAD → FEA)</h4>
-  <div class="image-row">
-    <img src="images/topology-bellcrank/designspace.png" alt="Design space / initial block">
-    <img src="images/topology-bellcrank/meshbody.png" alt="Topology optimization mesh body">
-    <img src="images/topology-bellcrank/bellcrank.png" alt="Final refined CAD model">
-    <img src="images/topology-bellcrank/stress.png" alt="von Mises stress result">
-  </div>
-
-  <h4>Key Engineering Outcomes</h4>
-  <ul class="pill-list">
-    <li>Converted topology mesh output into a manufacturable CAD model.</li>
-    <li>Preserved mounting/load interfaces while removing non-critical material.</li>
-    <li>Validated refined geometry using stress analysis.</li>
-  </ul>
-
-  <p style="margin-top:12px; color: rgba(255,255,255,0.75);">
-    Detailed slides/report available on request.
-  </p>
-</section>
-
-
-<!-- ===================== other ===================== -->
-    
-    
-    <section class="section card" id="contact">
-      <h3>Contact</h3>
-      <p><strong>Email:</strong> <a href="mailto:fahadalhadi283055@gmail.com">fahadalhadi283055@gmail.com</a></p>
-      <p><strong>Phone:</strong> <a href="tel:+352661596121">(+352) 661596121</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fahad-al-hadi-99b735118/" target="_blank" rel="noopener">fahad-al-hadi-99b735118</a></p>
-      <p><strong>Location:</strong> Differdange, Luxembourg</p>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Fahad Al Hadi</p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+      <span class="tag">Topology Optimization</span>
+      <span class="tag">Design for AM</span>
+      <span class="tag">FEA Validation</span>
+      <span class="tag">Fus
