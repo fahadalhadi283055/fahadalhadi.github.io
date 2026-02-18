@@ -32,148 +32,163 @@
       <p class="subtitle">
         Each project demonstrates engineering workflow: requirements → design → validation → manufacturability.
       </p>
-    </section>
 
-    <!-- ========================================================== -->
-    <!-- ===================== 1. GRAVITY LIGHT =================== -->
-    <!-- ========================================================== -->
-    <section id="gravity-light" class="section card">
-      <h3>Gravity Light – Design & Validation of a Sustainable Energy Device</h3>
-
-      <p>
-        Designed and validated a gravity-powered lighting system converting gravitational potential energy
-        into electrical output using a compound planetary gear train and DC motor generator.
-      </p>
-
-      <span class="tag">Mechanical Design</span>
-      <span class="tag">Planetary Gear Train</span>
-      <span class="tag">Additive Manufacturing</span>
-      <span class="tag">Autodesk Inventor</span>
-
-      <hr style="border:0;border-top:1px solid rgba(255,255,255,0.08);margin:16px 0;" />
-
-      <h4>Design Overview (Drawing → CAD → Prototype → Test)</h4>
-
-      <div class="image-row">
-        <img src="images/gravity-light/drawing-gear-train.png" alt="Engineering drawing">
-        <img src="images/gravity-light/cad-assembly.png" alt="CAD assembly">
-        <img src="images/gravity-light/prototype-printed.png" alt="3D printed prototype">
-        <img src="images/gravity-light/experimental-test.png" alt="Experimental setup">
+      <!-- PDF Button -->
+      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; align-items:center;">
+        <button class="btn" type="button" onclick="downloadProjectsPDF()">
+          Download Projects (PDF)
+        </button>
+        <span style="color: rgba(255,255,255,0.75); font-size: 13px;">
+          Tip: choose “Save as PDF” in the dialog
+        </span>
       </div>
-
-      <h4>Key Outcomes</h4>
-      <ul class="pill-list">
-        <li>Achieved ~2700:1 gear ratio for speed amplification.</li>
-        <li>Validated PLA gear strength using Lewis bending stress.</li>
-        <li>Demonstrated gravity-driven LED illumination.</li>
-        <li>Identified transmission losses and proposed improvements.</li>
-      </ul>
     </section>
 
-    <!-- ========================================================== -->
-    <!-- ===================== 2. SCREW PRESS ===================== -->
-    <!-- ========================================================== -->
-    <section id="screw-press" class="section card">
-      <h3>20 kN Single-Column Screw Press – Design & Structural Validation</h3>
+    <!-- Only this wrapper will be exported to PDF -->
+    <div id="projects-pdf">
 
-      <p>
-        Designed a compact single-column screw press with focus on casting feasibility,
-        machining features, load transfer, and static structural validation.
-      </p>
+      <!-- ========================================================== -->
+      <!-- ===================== 1. GRAVITY LIGHT =================== -->
+      <!-- ========================================================== -->
+      <section id="gravity-light" class="section card">
+        <h3>Gravity Light – Design & Validation of a Sustainable Energy Device</h3>
 
-      <span class="tag">Machine Design</span>
-      <span class="tag">Casting & Machining</span>
-      <span class="tag">Static FEA</span>
-      <span class="tag">Fusion 360</span>
+        <p>
+          Designed and validated a gravity-powered lighting system converting gravitational potential energy
+          into electrical output using a compound planetary gear train and DC motor generator.
+        </p>
 
-      <hr style="border:0;border-top:1px solid rgba(255,255,255,0.08);margin:16px 0;" />
+        <span class="tag">Mechanical Design</span>
+        <span class="tag">Planetary Gear Train</span>
+        <span class="tag">Additive Manufacturing</span>
+        <span class="tag">Autodesk Inventor</span>
 
-      <h4>Design to Validation Workflow</h4>
+        <hr style="border:0;border-top:1px solid rgba(255,255,255,0.08);margin:16px 0;" />
 
-      <div class="image-row">
-        <img src="images/screw-press/assembly.png" alt="Assembly model">
-        <img src="images/screw-press/cast-part.png" alt="Cast part">
-        <img src="images/screw-press/machined-part.png" alt="Machined part">
-        <img src="images/screw-press/safety-factor.png" alt="Safety factor plot">
-        <img src="images/screw-press/stress-analysis.png" alt="Von Mises stress">
-      </div>
+        <h4>Design Overview (Drawing → CAD → Prototype → Test)</h4>
 
-      <h4>Key Outcomes</h4>
-      <ul class="pill-list">
-        <li>Designed casting-ready geometry with proper fillets and thickness.</li>
-        <li>Validated structural safety (min safety factor ≈ 1.47).</li>
-        <li>Optimized stress concentration zones.</li>
-      </ul>
-    </section>
+        <div class="image-row">
+          <img src="images/gravity-light/drawing-gear-train.png" alt="Engineering drawing">
+          <img src="images/gravity-light/cad-assembly.png" alt="CAD assembly">
+          <img src="images/gravity-light/prototype-printed.png" alt="3D printed prototype">
+          <img src="images/gravity-light/experimental-test.png" alt="Experimental setup">
+        </div>
 
-    <!-- ========================================================== -->
-    <!-- ===================== 3. TOPOLOGY ======================== -->
-    <!-- ========================================================== -->
-    <section id="topology-bellcrank" class="section card">
-      <h3>Topology Optimization – Bell Crank (Additive Manufacturing)</h3>
+        <h4>Key Outcomes</h4>
+        <ul class="pill-list">
+          <li>Achieved ~2700:1 gear ratio for speed amplification.</li>
+          <li>Validated PLA gear strength using Lewis bending stress.</li>
+          <li>Demonstrated gravity-driven LED illumination.</li>
+          <li>Identified transmission losses and proposed improvements.</li>
+        </ul>
+      </section>
 
-      <p>
-        Performed topology optimization inside a fixed design space to reduce mass while
-        maintaining stiffness, then converted the mesh output into a manufacturable CAD model.
-      </p>
+      <!-- ========================================================== -->
+      <!-- ===================== 2. SCREW PRESS ===================== -->
+      <!-- ========================================================== -->
+      <section id="screw-press" class="section card">
+        <h3>20 kN Single-Column Screw Press – Design & Structural Validation</h3>
 
-      <span class="tag">Topology Optimization</span>
-      <span class="tag">Design for AM</span>
-      <span class="tag">FEA Validation</span>
-      <span class="tag">Fusion 360</span>
+        <p>
+          Designed a compact single-column screw press with focus on casting feasibility,
+          machining features, load transfer, and static structural validation.
+        </p>
 
-      <hr style="border:0;border-top:1px solid rgba(255,255,255,0.08);margin:16px 0;" />
+        <span class="tag">Machine Design</span>
+        <span class="tag">Casting & Machining</span>
+        <span class="tag">Static FEA</span>
+        <span class="tag">Fusion 360</span>
 
-      <h4>Workflow (Design Space → Mesh → Final CAD → FEA)</h4>
+        <hr style="border:0;border-top:1px solid rgba(255,255,255,0.08);margin:16px 0;" />
 
-      <div class="image-row">
-        <img src="images/topology-bellcrank/designspace.png" alt="Design space">
-        <img src="images/topology-bellcrank/meshbody.png" alt="Topology mesh">
-        <img src="images/topology-bellcrank/bellcrank.png" alt="Final CAD model">
-        <img src="images/topology-bellcrank/stress.png" alt="Stress analysis">
-      </div>
+        <h4>Design to Validation Workflow</h4>
 
-      <h4>Key Outcomes</h4>
-      <ul class="pill-list">
-        <li>Removed non-critical material while preserving functional interfaces.</li>
-        <li>Rebuilt optimized geometry as smooth parametric CAD.</li>
-        <li>Validated stress distribution under load.</li>
-      </ul>
-    </section>
+        <div class="image-row">
+          <img src="images/screw-press/assembly.png" alt="Assembly model">
+          <img src="images/screw-press/cast-part.png" alt="Cast part">
+          <img src="images/screw-press/machined-part.png" alt="Machined part">
+          <img src="images/screw-press/safety-factor.png" alt="Safety factor plot">
+          <img src="images/screw-press/stress-analysis.png" alt="Von Mises stress">
+        </div>
 
-    <!-- ========================================================== -->
-    <!-- ============ 4. REVERSE ENGINEERING PROJECT ============= -->
-    <!-- ========================================================== -->
-    <section id="reverse-connecting-rod" class="section card">
-      <h3>Reverse Engineering – Connecting Rod Cap (Scan → CAD → Drawing)</h3>
+        <h4>Key Outcomes</h4>
+        <ul class="pill-list">
+          <li>Designed casting-ready geometry with proper fillets and thickness.</li>
+          <li>Validated structural safety (min safety factor ≈ 1.47).</li>
+          <li>Optimized stress concentration zones.</li>
+        </ul>
+      </section>
 
-      <p>
-        Reconstructed a connecting rod cap using scanned data acquisition,
-        rebuilt functional geometry in CAD, and produced a dimensioned manufacturing drawing.
-      </p>
+      <!-- ========================================================== -->
+      <!-- ===================== 3. TOPOLOGY ======================== -->
+      <!-- ========================================================== -->
+      <section id="topology-bellcrank" class="section card">
+        <h3>Topology Optimization – Bell Crank (Additive Manufacturing)</h3>
 
-      <span class="tag">Reverse Engineering</span>
-      <span class="tag">CAD Reconstruction</span>
-      <span class="tag">Engineering Drawing</span>
-      <span class="tag">Autodesk Inventor</span>
+        <p>
+          Performed topology optimization inside a fixed design space to reduce mass while
+          maintaining stiffness, then converted the mesh output into a manufacturable CAD model.
+        </p>
 
-      <hr style="border:0;border-top:1px solid rgba(255,255,255,0.08);margin:16px 0;" />
+        <span class="tag">Topology Optimization</span>
+        <span class="tag">Design for AM</span>
+        <span class="tag">FEA Validation</span>
+        <span class="tag">Fusion 360</span>
 
-      <h4>Workflow (Scan → Final CAD → Drawing)</h4>
+        <hr style="border:0;border-top:1px solid rgba(255,255,255,0.08);margin:16px 0;" />
 
-      <div class="image-row">
-        <img src="images/reverse-connecting-rod/scan.png" alt="Scanned reference">
-        <img src="images/reverse-connecting-rod/final.png" alt="Final CAD reconstruction">
-        <img src="images/reverse-connecting-rod/drawing.png" alt="Engineering drawing">
-      </div>
+        <h4>Workflow (Design Space → Mesh → Final CAD → FEA)</h4>
 
-      <h4>Key Outcomes</h4>
-      <ul class="pill-list">
-        <li>Converted scan data into parametric CAD geometry.</li>
-        <li>Reconstructed bolt interfaces and seating surfaces.</li>
-        <li>Generated manufacturing drawing with full dimensions.</li>
-      </ul>
-    </section>
+        <div class="image-row">
+          <img src="images/topology-bellcrank/designspace.png" alt="Design space">
+          <img src="images/topology-bellcrank/meshbody.png" alt="Topology mesh">
+          <img src="images/topology-bellcrank/bellcrank.png" alt="Final CAD model">
+          <img src="images/topology-bellcrank/stress.png" alt="Stress analysis">
+        </div>
+
+        <h4>Key Outcomes</h4>
+        <ul class="pill-list">
+          <li>Removed non-critical material while preserving functional interfaces.</li>
+          <li>Rebuilt optimized geometry as smooth parametric CAD.</li>
+          <li>Validated stress distribution under load.</li>
+        </ul>
+      </section>
+
+      <!-- ========================================================== -->
+      <!-- ============ 4. REVERSE ENGINEERING PROJECT ============= -->
+      <!-- ========================================================== -->
+      <section id="reverse-connecting-rod" class="section card">
+        <h3>Reverse Engineering – Connecting Rod Cap (Scan → CAD → Drawing)</h3>
+
+        <p>
+          Reconstructed a connecting rod cap using scanned data acquisition,
+          rebuilt functional geometry in CAD, and produced a dimensioned manufacturing drawing.
+        </p>
+
+        <span class="tag">Reverse Engineering</span>
+        <span class="tag">CAD Reconstruction</span>
+        <span class="tag">Engineering Drawing</span>
+        <span class="tag">Autodesk Inventor</span>
+
+        <hr style="border:0;border-top:1px solid rgba(255,255,255,0.08);margin:16px 0;" />
+
+        <h4>Workflow (Scan → Final CAD → Drawing)</h4>
+
+        <div class="image-row">
+          <img src="images/reverse-connecting-rod/scan.png" alt="Scanned reference">
+          <img src="images/reverse-connecting-rod/final.png" alt="Final CAD reconstruction">
+          <img src="images/reverse-connecting-rod/drawing.png" alt="Engineering drawing">
+        </div>
+
+        <h4>Key Outcomes</h4>
+        <ul class="pill-list">
+          <li>Converted scan data into parametric CAD geometry.</li>
+          <li>Reconstructed bolt interfaces and seating surfaces.</li>
+          <li>Generated manufacturing drawing with full dimensions.</li>
+        </ul>
+      </section>
+
+    </div><!-- /#projects-pdf -->
 
     <!-- ================= CONTACT ================= -->
     <section class="section card" id="contact">
@@ -197,8 +212,13 @@
     </div>
   </footer>
 
+  <!-- ================= SCRIPTS ================= -->
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    function downloadProjectsPDF() {
+      window.print();
+    }
   </script>
 
 </body>
