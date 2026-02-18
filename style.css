@@ -269,3 +269,47 @@ hr { opacity: 0.7; }
   .hero h2 { font-size: 34px; }
   .slider-card { flex-basis: 260px; }
 }
+/* ===== Export Projects to PDF ===== */
+@media print {
+  /* Hide navigation + footer + anything outside projects */
+  header, footer, #contact { display: none !important; }
+
+  /* Make background white and text black for a clean PDF */
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  /* Remove shadows and fancy effects */
+  .card, .project-card, .slider-card {
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+    background: #fff !important;
+  }
+
+  /* Only show the projects wrapper */
+  body * { visibility: hidden; }
+  #projects-pdf, #projects-pdf * { visibility: visible; }
+
+  /* Place projects at the top of the PDF */
+  #projects-pdf {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  /* Make images smaller and consistent in PDF */
+  .image-row img {
+    height: 140px !important;
+    border: 1px solid #ddd !important;
+    background: #fff !important;
+  }
+
+  /* Avoid ugly page breaks inside a project card */
+  section.card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
