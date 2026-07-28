@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects | Fahad Al Hadi</title>
-<meta name="description" content="Mechanical design case studies: Gravity Light, 20 kN Screw Press, Bell Crank topology optimization, connecting rod reverse engineering, plus SolidWorks machine element practice.">
+<title>Fahad Al Hadi | Mechanical Design Portfolio</title>
+<meta name="description" content="Mechanical Design Engineer — CAD/CAE, structural validation (FEA), GD&T drawing packages, and manufacturing-ready design.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -16,9 +16,9 @@
     <a class="brand" href="index.html"><span class="mark">FA</span> FAHAD AL HADI</a>
     <button class="nav-toggle" aria-label="Toggle menu">MENU</button>
     <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="#experience">Experience</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="projects.html#experience">Experience</a>
       <a href="#contact">Contact</a>
       <a class="btn btn-quiet" href="resume.pdf">Download CV ↓</a>
     </div>
@@ -27,270 +27,140 @@
 
 <main>
 
-  <!-- ================= INTRO ================= -->
-  <section class="section-tight wrap">
-    <div class="eyebrow">Project Portfolio</div>
-    <h1 style="font-size:clamp(28px,3.6vw,42px);">Design → Validation → Manufacturability</h1>
-    <p class="case-intro">Each case study below follows the same real workflow used on every project: requirements, concept design, CAD, structural or manufacturing validation, and a manufacturing-ready output.</p>
-  </section>
+  <!-- ================= HERO ================= -->
+  <section class="hero wrap">
+    <div class="hero-grid">
+      <div class="reveal in">
+        <div class="eyebrow">Mechanical Design Engineer</div>
+        <h1>Concept to <span class="accent">validated, manufacturable</span> mechanical design.</h1>
+        <div class="hero-role">CAD MODELLING · GD&amp;T DRAWINGS · NON-LINEAR FEA · DFAM · LEAN MANUFACTURING</div>
+        <p class="lede">
+          Mechanical design engineer with hands-on CAD/CAE experience across the full equipment
+          development lifecycle — concept design, gear and mechanism sizing, structural (FEA)
+          validation, GD&amp;T drawing packages, and physical prototyping. Currently completing an
+          MSc in Sustainable Product Creation at the University of Luxembourg, building on 3+ years
+          of industrial engineering experience in lean manufacturing and cross-functional production support.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn" href="projects.html">View Projects</a>
+          <a class="btn btn-quiet" href="#contact">Contact Me</a>
+        </div>
+      </div>
 
-  <!-- ================= GRAVITY LIGHT ================= -->
-  <section class="section wrap project-case" id="gravity-light">
-    <div class="title-block">
-      <div class="title-block-row">
-        <div class="tb-cell tb-title"><span class="tb-label">Project</span><span class="tb-value">Gravity Light — Sustainable Energy Device</span></div>
-        <div class="tb-cell"><span class="tb-label">Dwg No.</span><span class="tb-value">GL-001</span></div>
-        <div class="tb-cell"><span class="tb-label">Program</span><span class="tb-value">Autodesk Inventor</span></div>
-        <div class="tb-cell"><span class="tb-label">Scope</span><span class="tb-value">MSc Project</span></div>
-        <div class="tb-cell"><span class="tb-label">Org.</span><span class="tb-value">Univ. of Luxembourg</span></div>
+      <div class="reveal in">
+        <div class="hero-visual">
+          <span class="viewport-tag">ISO VIEW · SOLIDWORKS</span>
+          <img src="images/spur-gear.png" alt="Spur gear modelled in SolidWorks, isometric view">
+          <svg class="viewport-gizmo" viewBox="0 0 60 60" fill="none">
+            <circle cx="30" cy="30" r="4" fill="#5CB2E8"/>
+            <line x1="30" y1="30" x2="30" y2="8" stroke="#5CB2E8" stroke-width="1.5"/>
+            <line x1="30" y1="30" x2="50" y2="42" stroke="#93A3AD" stroke-width="1.5"/>
+            <line x1="30" y1="30" x2="12" y2="42" stroke="#E8A33D" stroke-width="1.5"/>
+            <text x="30" y="6" fill="#5CB2E8" font-size="7" font-family="monospace" text-anchor="middle">Z</text>
+            <text x="53" y="46" fill="#93A3AD" font-size="7" font-family="monospace">X</text>
+            <text x="6" y="46" fill="#E8A33D" font-size="7" font-family="monospace">Y</text>
+          </svg>
+          <div class="dim-callout">m1.5 · 20T SPUR GEAR</div>
+        </div>
       </div>
     </div>
-
-    <p class="case-intro">
-      Full design-build-test cycle for a gravity-powered lighting system: concept development and
-      gear calculations, CAD modelling, GD&amp;T technical drawings, BOM, physical prototyping, and
-      mechanical validation testing against design and end-user requirements.
-    </p>
-    <div class="tag-row" style="margin-bottom:26px;">
-      <span class="tag">Compound Planetary Gear Train</span><span class="tag">Lewis Bending Stress</span><span class="tag">3D Printed PLA</span><span class="tag">Prototype Testing</span>
-    </div>
-
-    <div class="flow-strip">
-      <figure><img src="images/gravity-light/drawing-gear-train.png" alt="Gear train engineering drawing"><figcaption>01 — Drawing</figcaption></figure>
-      <figure><img src="images/gravity-light/cad-assembly.png" alt="CAD assembly of gravity light"><figcaption>02 — CAD Assembly</figcaption></figure>
-      <figure><img src="images/gravity-light/prototype-printed.png" alt="3D printed prototype"><figcaption>03 — Prototype</figcaption></figure>
-      <figure><img src="images/gravity-light/experimental-test.png" alt="Experimental test setup"><figcaption>04 — Test</figcaption></figure>
-    </div>
-
-    <ul class="outcomes">
-      <li>Converted a <strong>12 kg / 1800 mm</strong> descending mass at 0.083 RPM into <strong>227 RPM output</strong> via a <strong>2734.7:1</strong> gear ratio.</li>
-      <li>Validated the <strong>module 1.5, 172.5 mm</strong> planetary ring gear using Lewis bending equations — peak stress of <strong>14.47 MPa</strong>, well within the 40–60 MPa tensile strength of the 3D-printed PLA components.</li>
-      <li>Built and tested a working prototype achieving <strong>1200 RPM / 2 V</strong> output from the drive motor.</li>
-      <li>Diagnosed the transmission-efficiency gap versus the 20-minute illumination target and defined a clear optimization path — pulley resizing, ratio reduction, belt/chain transmission — through experimental root-cause analysis.</li>
-    </ul>
   </section>
 
-  <!-- ================= SCREW PRESS ================= -->
-  <section class="section wrap project-case" id="screw-press">
-    <div class="title-block">
-      <div class="title-block-row">
-        <div class="tb-cell tb-title"><span class="tb-label">Project</span><span class="tb-value">20 kN Single-Column Screw Press</span></div>
-        <div class="tb-cell"><span class="tb-label">Dwg No.</span><span class="tb-value">SP-002</span></div>
-        <div class="tb-cell"><span class="tb-label">Program</span><span class="tb-value">Fusion 360</span></div>
-        <div class="tb-cell"><span class="tb-label">Material</span><span class="tb-value">Cast Iron Gr. 40</span></div>
-        <div class="tb-cell"><span class="tb-label">Org.</span><span class="tb-value">Univ. of Luxembourg</span></div>
+  <!-- ================= SKILLS ================= -->
+  <section class="section wrap" id="skills">
+    <div class="eyebrow">Core Competencies</div>
+    <h2>Spec sheet</h2>
+    <div class="spec-table">
+      <div class="spec-row">
+        <h4>CAD &amp; 3D Modelling</h4>
+        <p>SolidWorks · Autodesk Inventor · Fusion 360 · CATIA</p>
+      </div>
+      <div class="spec-row">
+        <h4>Simulation &amp; CAE</h4>
+        <p>ANSYS (structural &amp; non-linear FEA) · Nastran · Topology Optimization · Life Cycle Assessment (LCA)</p>
+      </div>
+      <div class="spec-row">
+        <h4>GD&amp;T &amp; Technical Drawings</h4>
+        <p>Dimensioning, tolerancing, and manufacturing drawing packages</p>
+      </div>
+      <div class="spec-row">
+        <h4>Additive Manufacturing</h4>
+        <p>Design for AM (DFAM) · mesh preparation · build-constraint optimization · topology-driven geometry export</p>
+      </div>
+      <div class="spec-row">
+        <h4>Robotics &amp; Automation</h4>
+        <p>Robot programming · vision-based quality inspection · IIoT integration · sensor &amp; actuator systems</p>
+      </div>
+      <div class="spec-row">
+        <h4>Programming &amp; Data</h4>
+        <p>Python (pandas, matplotlib, automation) · MATLAB &amp; Simulink</p>
+      </div>
+      <div class="spec-row">
+        <h4>Manufacturing &amp; Process Engineering</h4>
+        <p>Lean Manufacturing · Six Sigma · Kaizen · 5S · Value Stream Mapping · Root Cause Analysis · ISO 9001 / 14001 / 45001</p>
+      </div>
+      <div class="spec-row">
+        <h4>Tools &amp; Languages</h4>
+        <p>MS Office (Excel, advanced) · Oracle ERP · English (C1) · French (beginner) · Urdu (native)</p>
       </div>
     </div>
-
-    <p class="case-intro">
-      Structural validation of a compact single-column screw press base frame, with focus on casting
-      feasibility, machining features, load transfer, and non-linear FEA under full rated load.
-    </p>
-    <div class="tag-row" style="margin-bottom:26px;">
-      <span class="tag">Non-Linear FEA</span><span class="tag">Casting &amp; Machining DFM</span><span class="tag">~31 kg</span>
-    </div>
-
-    <div class="flow-strip">
-      <figure><img src="images/screw-press/assembly.png" alt="Screw press assembly model"><figcaption>01 — Assembly</figcaption></figure>
-      <figure><img src="images/screw-press/cast-part.png" alt="Cast part geometry"><figcaption>02 — Cast Part</figcaption></figure>
-      <figure><img src="images/screw-press/machined-part.png" alt="Machined part"><figcaption>03 — Machined Part</figcaption></figure>
-      <figure><img src="images/screw-press/safety-factor.png" alt="Safety factor plot"><figcaption>04 — Safety Factor</figcaption></figure>
-      <figure><img src="images/screw-press/stress-analysis.png" alt="Von Mises stress analysis"><figcaption>05 — Von Mises Stress</figcaption></figure>
-    </div>
-
-    <ul class="outcomes">
-      <li>Performed non-linear FEA of the <strong>20 kN-rated</strong> base frame (Cast Iron Grade 40, ~31 kg), validating a safety factor of <strong>1.5</strong>.</li>
-      <li>Maximum Von Mises stress kept below <strong>200 MPa</strong>, with peak displacement of <strong>~1 mm</strong> under full load.</li>
-      <li>Identified stress concentrations at frame corners via FEA and resolved them through fillet redesign — confirming structural integrity without added mass.</li>
-      <li>Designed casting-ready geometry with appropriate fillets, draft, and wall thickness for foundry manufacture.</li>
-    </ul>
   </section>
 
-  <!-- ================= TOPOLOGY BELL CRANK ================= -->
-  <section class="section wrap project-case" id="topology-bellcrank">
-    <div class="title-block">
-      <div class="title-block-row">
-        <div class="tb-cell tb-title"><span class="tb-value">Topology Optimization — Bell Crank</span></div>
-        <div class="tb-cell"><span class="tb-label">Dwg No.</span><span class="tb-value">BC-003</span></div>
-        <div class="tb-cell"><span class="tb-label">Program</span><span class="tb-value">Fusion 360 / Nastran</span></div>
-        <div class="tb-cell"><span class="tb-label">Material</span><span class="tb-value">LUVOCOM 3F PET CF</span></div>
-        <div class="tb-cell"><span class="tb-label">Org.</span><span class="tb-value">Univ. of Luxembourg</span></div>
-      </div>
-    </div>
+  <!-- ================= FEATURED PROJECTS ================= -->
+  <section class="section wrap" id="featured">
+    <div class="eyebrow">Featured Projects</div>
+    <h2>Design → validation case studies</h2>
+    <div class="card-grid">
 
-    <p class="case-intro">
-      Redesigned a bell crank component from a fixed 77.1 × 112.3 × 15 mm design space under a 20 kN
-      load, through mesh generation, iterative topology optimization, and DfAM-compliant CAD reconstruction.
-    </p>
-    <div class="tag-row" style="margin-bottom:26px;">
-      <span class="tag">Topology Optimization</span><span class="tag">Design for AM</span><span class="tag">Non-Linear + Buckling FEA</span>
-    </div>
+      <a class="pcard reveal" href="projects.html#gravity-light">
+        <div class="pcard-img"><img src="images/gravity-light/cad-assembly.png" alt="Gravity Light planetary gear train CAD assembly"></div>
+        <div class="pcard-body">
+          <h3>Gravity Light — Sustainable Energy Device</h3>
+          <p>2734.7:1 compound planetary gear train converting a descending mass into 227 RPM output; built and tested a working prototype.</p>
+          <div class="tag-row"><span class="tag">Inventor</span><span class="tag">Gear Design</span><span class="tag">Prototype Test</span></div>
+          <span class="pcard-link">Read the case study</span>
+        </div>
+      </a>
 
-    <div class="flow-strip">
-      <figure><img src="images/topology-bellcrank/designspace.png" alt="Design space definition"><figcaption>01 — Design Space</figcaption></figure>
-      <figure><img src="images/topology-bellcrank/meshbody.png" alt="Topology optimization mesh output"><figcaption>02 — Topology Mesh</figcaption></figure>
-      <figure><img src="images/topology-bellcrank/bellcrank.png" alt="Final reconstructed CAD model"><figcaption>03 — Final CAD</figcaption></figure>
-      <figure><img src="images/topology-bellcrank/stress.png" alt="Stress analysis of final geometry"><figcaption>04 — FEA Validation</figcaption></figure>
-    </div>
+      <a class="pcard reveal" href="projects.html#screw-press">
+        <div class="pcard-img"><img src="images/screw-press/assembly.png" alt="20 kN single-column screw press assembly"></div>
+        <div class="pcard-body">
+          <h3>20 kN Single-Column Screw Press</h3>
+          <p>Non-linear FEA of a cast-iron base frame; SF 1.5, Von Mises stress below 200 MPa, ~1 mm peak displacement.</p>
+          <div class="tag-row"><span class="tag">Fusion 360</span><span class="tag">Non-Linear FEA</span><span class="tag">Casting DFM</span></div>
+          <span class="pcard-link">Read the case study</span>
+        </div>
+      </a>
 
-    <ul class="outcomes">
-      <li>Removed non-critical material while preserving functional load-bearing interfaces.</li>
-      <li>Rebuilt the optimized mesh output as smooth, DfAM-compliant parametric CAD in LUVOCOM® 3F PET CF 9780 BK.</li>
-      <li>Validated via non-linear structural and buckling FEA in Nastran: <strong>0.374 mm</strong> maximum displacement, <strong>74.7 MPa</strong> Von Mises stress, and a <strong>5.4×</strong> buckling safety margin against the applied load.</li>
-    </ul>
+      <a class="pcard reveal" href="projects.html#topology-bellcrank">
+        <div class="pcard-img"><img src="images/topology-bellcrank/bellcrank.png" alt="Topology-optimized bell crank final CAD model"></div>
+        <div class="pcard-body">
+          <h3>Topology Optimization — Bell Crank</h3>
+          <p>DfAM-compliant reconstruction under 20 kN load; 74.7 MPa Von Mises, 0.374 mm displacement, 5.4× buckling margin.</p>
+          <div class="tag-row"><span class="tag">Topology Opt.</span><span class="tag">Nastran</span><span class="tag">DFAM</span></div>
+          <span class="pcard-link">Read the case study</span>
+        </div>
+      </a>
+
+    </div>
   </section>
 
-  <!-- ================= REVERSE ENGINEERING ================= -->
-  <section class="section wrap project-case" id="reverse-connecting-rod">
-    <div class="title-block">
-      <div class="title-block-row">
-        <div class="tb-cell tb-title"><span class="tb-value">Reverse Engineering — Connecting Rod Cap</span></div>
-        <div class="tb-cell"><span class="tb-label">Dwg No.</span><span class="tb-value">RE-004</span></div>
-        <div class="tb-cell"><span class="tb-label">Program</span><span class="tb-value">Autodesk Inventor</span></div>
-        <div class="tb-cell"><span class="tb-label">Method</span><span class="tb-value">3D Scan → CAD</span></div>
-        <div class="tb-cell"><span class="tb-label">Org.</span><span class="tb-value">Univ. of Luxembourg</span></div>
-      </div>
-    </div>
-
+  <!-- ================= PARTS PRACTICE TEASER ================= -->
+  <section class="section wrap" id="parts-teaser">
+    <div class="eyebrow">Machine Element Modelling</div>
+    <h2>SolidWorks practice — building modelling speed</h2>
     <p class="case-intro">
-      Reconstructed a connecting rod cap from 3D scan data acquisition through point-cloud processing
-      to a fully parametric CAD model and dimensioned manufacturing drawing.
+      Alongside the validated engineering case studies above, a running set of standard machine
+      elements rebuilt from drawing references to sharpen SolidWorks modelling speed and feature-based
+      part construction — clevises, flanged fittings, gears, and fasteners.
     </p>
-    <div class="tag-row" style="margin-bottom:26px;">
-      <span class="tag">Reverse Engineering</span><span class="tag">Point Cloud Processing</span><span class="tag">GD&amp;T Drawing</span>
-    </div>
-
-    <div class="flow-strip">
-      <figure><img src="images/reverse-connecting-rod/scan.png" alt="Scanned reference point cloud"><figcaption>01 — Scan Data</figcaption></figure>
-      <figure><img src="images/reverse-connecting-rod/final.png" alt="Final CAD reconstruction"><figcaption>02 — Final CAD</figcaption></figure>
-      <figure><img src="images/reverse-connecting-rod/drawing.png" alt="Manufacturing drawing"><figcaption>03 — Drawing</figcaption></figure>
-    </div>
-
-    <ul class="outcomes">
-      <li>Converted raw scan data into fully parametric CAD geometry.</li>
-      <li>Reconstructed bolt interfaces and bearing seating surfaces to functional tolerance.</li>
-      <li>Produced a complete manufacturing drawing with full GD&amp;T dimensioning.</li>
-    </ul>
-  </section>
-
-  <!-- ================= PARTS GALLERY ================= -->
-  <section class="section wrap project-case" id="parts-gallery">
-    <div class="title-block">
-      <div class="title-block-row">
-        <div class="tb-cell tb-title"><span class="tb-value">Machine Element Modelling — SolidWorks Practice</span></div>
-        <div class="tb-cell"><span class="tb-label">Dwg No.</span><span class="tb-value">ME-005</span></div>
-        <div class="tb-cell"><span class="tb-label">Program</span><span class="tb-value">SolidWorks</span></div>
-        <div class="tb-cell"><span class="tb-label">Parts</span><span class="tb-value">11 of 11</span></div>
-        <div class="tb-cell"><span class="tb-label">Sheet</span><span class="tb-value">1 of 1</span></div>
-      </div>
-    </div>
-    <p class="case-intro">
-      Standard machine elements rebuilt from engineering drawing references to build SolidWorks
-      modelling speed, feature-tree discipline, and GD&amp;T fluency — the fundamentals underneath
-      every case study above.
-    </p>
-
     <div class="parts-grid">
-      <div class="part-item"><div class="part-img"><img src="images/clevis-bracket.png" alt="Clevis bracket, SolidWorks"></div><div class="part-cap"><span>Clevis Bracket</span><span class="p-no">01</span></div></div>
-      <div class="part-item"><div class="part-img"><img src="images/slotted-guide-block.png" alt="Slotted guide block, SolidWorks"></div><div class="part-cap"><span>Slotted Guide Block</span><span class="p-no">02</span></div></div>
-      <div class="part-item"><div class="part-img"><img src="images/clevis-yoke.png" alt="Clevis yoke, SolidWorks"></div><div class="part-cap"><span>Clevis Yoke</span><span class="p-no">03</span></div></div>
-      <div class="part-item"><div class="part-img"><img src="images/hex-collar.png" alt="Hex collar, SolidWorks"></div><div class="part-cap"><span>Hex Collar</span><span class="p-no">04</span></div></div>
-      <div class="part-item"><div class="part-img"><img src="images/forked-link-arm.png" alt="Forked link arm, SolidWorks"></div><div class="part-cap"><span>Forked Link Arm</span><span class="p-no">05</span></div></div>
-      <div class="part-item"><div class="part-img"><img src="images/collet-shaft.png" alt="Collet shaft, SolidWorks"></div><div class="part-cap"><span>Collet Shaft</span><span class="p-no">06</span></div></div>
-      <div class="part-item"><div class="part-img"><img src="images/flanged-tee-fitting.png" alt="Flanged wye pipe fitting, SolidWorks"></div><div class="part-cap"><span>Flanged Wye Fitting</span><span class="p-no">07</span></div></div>
-      <div class="part-item"><div class="part-img"><img src="images/hex-nut-slotted.png" alt="Slotted hex nut, SolidWorks"></div><div class="part-cap"><span>Slotted Hex Nut</span><span class="p-no">08</span></div></div>
-      <div class="part-item"><div class="part-img"><img src="images/clevis-arm.png" alt="Clevis arm, SolidWorks"></div><div class="part-cap"><span>Clevis Arm</span><span class="p-no">09</span></div></div>
-      <div class="part-item"><div class="part-img"><img src="images/spur-gear.png" alt="Spur gear, SolidWorks"></div><div class="part-cap"><span>Spur Gear</span><span class="p-no">10</span></div></div>
-      <div class="part-item"><div class="part-img"><img src="images/cross-flange-fitting.png" alt="Cross flange pipe fitting, SolidWorks"></div><div class="part-cap"><span>Cross Flange Fitting</span><span class="p-no">11</span></div></div>
+      <div class="part-item reveal"><div class="part-img"><img src="images/spur-gear.png" alt="Spur gear, SolidWorks"></div><div class="part-cap"><span>Spur Gear</span><span class="p-no">M1.5</span></div></div>
+      <div class="part-item reveal"><div class="part-img"><img src="images/clevis-yoke.png" alt="Clevis yoke bracket, SolidWorks"></div><div class="part-cap"><span>Clevis Yoke</span><span class="p-no">04</span></div></div>
+      <div class="part-item reveal"><div class="part-img"><img src="images/cross-flange-fitting.png" alt="Cross flange pipe fitting, SolidWorks"></div><div class="part-cap"><span>Flange Fitting</span><span class="p-no">10</span></div></div>
+      <div class="part-item reveal"><div class="part-img"><img src="images/hex-nut-slotted.png" alt="Slotted hex nut, SolidWorks"></div><div class="part-cap"><span>Slotted Hex Nut</span><span class="p-no">08</span></div></div>
     </div>
-  </section>
-
-  <!-- ================= EXPERIENCE ================= -->
-  <section class="section wrap" id="experience">
-    <div class="eyebrow">Work Experience</div>
-    <h2>Industrial &amp; process engineering background</h2>
-    <div class="timeline">
-      <div class="tl-item">
-        <div><div class="tl-date">MAR 2022 – JUN 2024</div></div>
-        <div>
-          <div class="tl-role">Subject Matter Expert — Operational Excellence</div>
-          <div class="tl-org">MNBEC / The HAWKS · Lahore, Pakistan</div>
-          <ul>
-            <li>Led business process reengineering and benchmarking engagements for manufacturing clients, developing strategic road maps with senior consultants.</li>
-            <li>Designed a Factory Assessment Tool aligned to ISO 9001:2015, ISO 14001:2015, and ISO 45001:2018.</li>
-            <li>Implemented a visual management system that improved operational efficiency by <strong>30%</strong> and enabled real-time WIP control.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div><div class="tl-date">OCT 2020 – JUL 2022</div></div>
-        <div>
-          <div class="tl-role">Executive Industrial Engineer</div>
-          <div class="tl-org">Style Textile Pvt. Ltd · Lahore, Pakistan</div>
-          <ul>
-            <li>Improved plant efficiency from <strong>45% to 75%</strong> for ADIDAS operations through lean tools and line-balancing.</li>
-            <li>Built a workforce skill matrix enabling 80+ workers to perform multi-role tasks.</li>
-            <li>Deployed an inspection framework with the quality team that reduced defect rates and improved MTTR.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div><div class="tl-date">INDUSTRIAL PLACEMENT</div></div>
-        <div>
-          <div class="tl-role">Lubrication Performance Study — 3 Month Placement</div>
-          <div class="tl-org">TotalEnergies Lube House · Lahore, Pakistan</div>
-          <ul>
-            <li>Analyzed the effect of lubrication types on equipment reliability and produced a technical findings report.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= CERTIFICATIONS ================= -->
-  <section class="section wrap" id="certifications">
-    <div class="eyebrow">Certifications &amp; Professional Training</div>
-    <h2>Industrial Robotics &amp; Automation — 88 hrs.</h2>
-    <p class="case-intro">Digital Learning Hub Luxembourg · Nov–Dec 2025</p>
-    <div class="cert-grid">
-      <div class="cert-card">
-        <span class="cert-hrs">40 HRS</span>
-        <h4>From Code to Motion</h4>
-        <ul><li>Python for robotics</li><li>Motion control</li><li>IIoT integration</li></ul>
-      </div>
-      <div class="cert-card">
-        <span class="cert-hrs">24 HRS</span>
-        <h4>Vision Systems for Industrial Robots</h4>
-        <ul><li>Object recognition</li><li>Vision-based quality inspection</li><li>Sensor integration</li></ul>
-      </div>
-      <div class="cert-card">
-        <span class="cert-hrs">24 HRS</span>
-        <h4>Advanced Industrial Robotics</h4>
-        <ul><li>Advanced control algorithms</li><li>Actuator systems</li><li>Manufacturing applications</li></ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= EDUCATION ================= -->
-  <section class="section-tight wrap" id="education">
-    <div class="eyebrow">Education</div>
-    <div class="timeline">
-      <div class="tl-item">
-        <div><div class="tl-date">SEPT 2024 – PRESENT</div></div>
-        <div>
-          <div class="tl-role">MSc, Sustainable Product Creation (Mechanical Engineering)</div>
-          <div class="tl-org">University of Luxembourg</div>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div><div class="tl-date">OCT 2016 – AUG 2020</div></div>
-        <div>
-          <div class="tl-role">BSc, Industrial &amp; Manufacturing Engineering</div>
-          <div class="tl-org">University of Engineering and Technology (U.E.T), Lahore</div>
-          <ul><li>Thesis: Synthesis and characterization of micro/nano aluminum particles through electric discharge machining.</li></ul>
-        </div>
-      </div>
-    </div>
+    <p style="margin-top:20px;"><a class="pcard-link" href="projects.html#parts-gallery" style="font-size:14px;">See the full set of 11 parts</a></p>
   </section>
 
   <!-- ================= CONTACT ================= -->
