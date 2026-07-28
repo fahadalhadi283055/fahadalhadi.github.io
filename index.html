@@ -1,190 +1,188 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fahad Al Hadi | Mechanical Design Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fahad Al Hadi | Mechanical Design Portfolio</title>
+<meta name="description" content="Mechanical Design Engineer — CAD/CAE, structural validation (FEA), GD&T drawing packages, and manufacturing-ready design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- ================= HEADER ================= -->
-  <header class="site-header">
-    <div class="container">
-      <div class="brand">
-        <h1>Fahad Al Hadi</h1>
-        <p class="subtitle">
-          Mechanical Design Engineer • CAD/CAE • Manufacturing-Ready Design
-        </p>
-      </div>
-
-      <nav class="nav">
-        <a class="active" href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="#contact">Contact</a>
-        <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download CV</a>
-      </nav>
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html"><span class="mark">FA</span> FAHAD AL HADI</a>
+    <button class="nav-toggle" aria-label="Toggle menu">MENU</button>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="projects.html#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-quiet" href="resume.pdf">Download CV ↓</a>
     </div>
-  </header>
+  </nav>
+</header>
 
-  <!-- ================= MAIN ================= -->
-  <main class="container">
+<main>
 
-    <!-- ================= HERO ================= -->
-    <section class="hero">
-      <div>
-        <h2>Mechanical Design Engineer</h2>
-        <p class="hero-tagline">
-          CAD-Driven Design • Manufacturing-Ready Parts • Structural Validation
+  <!-- ================= HERO ================= -->
+  <section class="hero wrap">
+    <div class="hero-grid">
+      <div class="reveal in">
+        <div class="eyebrow">Mechanical Design Engineer</div>
+        <h1>Concept to <span class="accent">validated, manufacturable</span> mechanical design.</h1>
+        <div class="hero-role">CAD MODELLING · GD&amp;T DRAWINGS · NON-LINEAR FEA · DFAM · LEAN MANUFACTURING</div>
+        <p class="lede">
+          Mechanical design engineer with hands-on CAD/CAE experience across the full equipment
+          development lifecycle — concept design, gear and mechanism sizing, structural (FEA)
+          validation, GD&amp;T drawing packages, and physical prototyping. Currently completing an
+          MSc in Sustainable Product Creation at the University of Luxembourg, building on 3+ years
+          of industrial engineering experience in lean manufacturing and cross-functional production support.
         </p>
-
-        <p>
-          Mechanical & Industrial Engineer pursuing a Master’s in Sustainable Product Creation
-          at the University of Luxembourg. Specialized in mechanical system design,
-          CAD modeling, engineering drawings, and structural validation using FEA.
-        </p>
-
-        <div class="hero-actions">
+        <div class="hero-ctas">
           <a class="btn" href="projects.html">View Projects</a>
-          <a class="btn-outline" href="#contact">Contact Me</a>
+          <a class="btn btn-quiet" href="#contact">Contact Me</a>
         </div>
       </div>
 
-      <div class="card">
-        <h3>Core Skills</h3>
-        <ul class="pill-list">
-          <li>Autodesk Inventor • Fusion 360 • SolidWorks • CATIA</li>
-          <li>Mechanical Design • Assemblies • Engineering Drawings</li>
-          <li>Static FEA • Stress & Safety Factor Analysis</li>
-          <li>DFM/DFA • Additive Manufacturing</li>
-          <li>Lean Six Sigma • Process Optimization</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ================= FEATURED PROJECTS ================= -->
-    <section class="section">
-      <h3>Featured Projects</h3>
-
-      <div class="grid">
-
-        <a class="project-card" href="projects.html#gravity-light">
-          <h4>Gravity Light – Sustainable Energy Device</h4>
-          <p>
-            Compound planetary gear train, prototype, and experimental validation.
-          </p>
-          <span class="tool-pill">Autodesk Inventor</span>
-          <span class="tag">Machine Design</span>
-        </a>
-
-        <a class="project-card" href="projects.html#screw-press">
-          <h4>20 kN Single-Column Screw Press</h4>
-          <p>
-            Manufacturing-aware mechanical design and structural validation.
-          </p>
-          <span class="tool-pill">Fusion 360</span>
-          <span class="tag">Machine Design</span>
-        </a>
-
-        <a class="project-card" href="projects.html#topology-bellcrank">
-          <h4>Topology Optimization – Bell Crank</h4>
-          <p>
-            Topology optimization, refined CAD model, and FEA validation.
-          </p>
-          <span class="tool-pill">Fusion 360</span>
-          <span class="tag">Topology Optimization</span>
-        </a>
-
-      </div>
-    </section>
-
-    <!-- ================= OTHER PROJECTS (SLIDER) ================= -->
-    <section class="section">
-      <h3>Other Projects</h3>
-      <p class="subtitle">
-        Scroll horizontally or use the arrows. Additional projects can be added anytime.
-      </p>
-
-      <div class="slider">
-
-        <button class="slider-btn left" type="button"
-          onclick="scrollSlider('other-projects', -1)">‹</button>
-
-        <div id="other-projects" class="slider-track">
-
-          <a class="slider-card" href="projects.html#reverse-connecting-rod">
-            <h4>Reverse Engineering – Connecting Rod Cap</h4>
-            <p>Scan-based CAD reconstruction and manufacturing drawing.</p>
-            <span class="tool-pill">Autodesk Inventor</span>
-            <span class="tag">Reverse Engineering</span>
-          </a>
-
-          <a class="slider-card" href="#">
-            <h4>Fixture / Jig Design</h4>
-            <p>Precision fixture design for repeatable manufacturing setup.</p>
-            <span class="tool-pill">Fusion 360</span>
-            <span class="tag">DFM</span>
-          </a>
-
-          <a class="slider-card" href="#">
-            <h4>Sheet Metal Product Design</h4>
-            <p>Bend allowance design and manufacturable assembly planning.</p>
-            <span class="tool-pill">Fusion 360</span>
-            <span class="tag">Sheet Metal</span>
-          </a>
-
+      <div class="reveal in">
+        <div class="hero-visual">
+          <span class="viewport-tag">ISO VIEW · SOLIDWORKS</span>
+          <img src="images/parts/spur-gear.png" alt="Spur gear modelled in SolidWorks, isometric view">
+          <svg class="viewport-gizmo" viewBox="0 0 60 60" fill="none">
+            <circle cx="30" cy="30" r="4" fill="#5CB2E8"/>
+            <line x1="30" y1="30" x2="30" y2="8" stroke="#5CB2E8" stroke-width="1.5"/>
+            <line x1="30" y1="30" x2="50" y2="42" stroke="#93A3AD" stroke-width="1.5"/>
+            <line x1="30" y1="30" x2="12" y2="42" stroke="#E8A33D" stroke-width="1.5"/>
+            <text x="30" y="6" fill="#5CB2E8" font-size="7" font-family="monospace" text-anchor="middle">Z</text>
+            <text x="53" y="46" fill="#93A3AD" font-size="7" font-family="monospace">X</text>
+            <text x="6" y="46" fill="#E8A33D" font-size="7" font-family="monospace">Y</text>
+          </svg>
+          <div class="dim-callout">m1.5 · 20T SPUR GEAR</div>
         </div>
-
-        <button class="slider-btn right" type="button"
-          onclick="scrollSlider('other-projects', 1)">›</button>
-
       </div>
-    </section>
-
-    <!-- ================= CONTACT ================= -->
-    <section id="contact" class="section">
-      <h3>Contact</h3>
-      <div class="card">
-        <p><strong>Email:</strong> 
-          <a href="mailto:fahadalhadi283055@gmail.com">
-            fahadalhadi283055@gmail.com
-          </a>
-        </p>
-        <p><strong>Phone:</strong> 
-          <a href="tel:+352661596121">
-            (+352) 661 596 121
-          </a>
-        </p>
-        <p><strong>LinkedIn:</strong> 
-          <a href="https://www.linkedin.com/in/fahad-al-hadi-99b735118/" target="_blank" rel="noopener">
-            fahad-al-hadi-99b735118
-          </a>
-        </p>
-        <p><strong>Location:</strong> Differdange, Luxembourg</p>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Fahad Al Hadi • Mechanical Design Portfolio</p>
     </div>
-  </footer>
+  </section>
 
-  <!-- ================= SCRIPTS ================= -->
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+  <!-- ================= SKILLS ================= -->
+  <section class="section wrap" id="skills">
+    <div class="eyebrow">Core Competencies</div>
+    <h2>Spec sheet</h2>
+    <div class="spec-table">
+      <div class="spec-row">
+        <h4>CAD &amp; 3D Modelling</h4>
+        <p>SolidWorks · Autodesk Inventor · Fusion 360 · CATIA</p>
+      </div>
+      <div class="spec-row">
+        <h4>Simulation &amp; CAE</h4>
+        <p>ANSYS (structural &amp; non-linear FEA) · Nastran · Topology Optimization · Life Cycle Assessment (LCA)</p>
+      </div>
+      <div class="spec-row">
+        <h4>GD&amp;T &amp; Technical Drawings</h4>
+        <p>Dimensioning, tolerancing, and manufacturing drawing packages</p>
+      </div>
+      <div class="spec-row">
+        <h4>Additive Manufacturing</h4>
+        <p>Design for AM (DFAM) · mesh preparation · build-constraint optimization · topology-driven geometry export</p>
+      </div>
+      <div class="spec-row">
+        <h4>Robotics &amp; Automation</h4>
+        <p>Robot programming · vision-based quality inspection · IIoT integration · sensor &amp; actuator systems</p>
+      </div>
+      <div class="spec-row">
+        <h4>Programming &amp; Data</h4>
+        <p>Python (pandas, matplotlib, automation) · MATLAB &amp; Simulink</p>
+      </div>
+      <div class="spec-row">
+        <h4>Manufacturing &amp; Process Engineering</h4>
+        <p>Lean Manufacturing · Six Sigma · Kaizen · 5S · Value Stream Mapping · Root Cause Analysis · ISO 9001 / 14001 / 45001</p>
+      </div>
+      <div class="spec-row">
+        <h4>Tools &amp; Languages</h4>
+        <p>MS Office (Excel, advanced) · Oracle ERP · English (C1) · French (beginner) · Urdu (native)</p>
+      </div>
+    </div>
+  </section>
 
-    function scrollSlider(id, direction) {
-      const el = document.getElementById(id);
-      if (!el) return;
-      const amount = Math.min(900, el.clientWidth * 0.9);
-      el.scrollBy({ left: direction * amount, behavior: "smooth" });
-    }
-  </script>
+  <!-- ================= FEATURED PROJECTS ================= -->
+  <section class="section wrap" id="featured">
+    <div class="eyebrow">Featured Projects</div>
+    <h2>Design → validation case studies</h2>
+    <div class="card-grid">
 
+      <a class="pcard reveal" href="projects.html#gravity-light">
+        <div class="pcard-img"><img src="images/gravity-light/cad-assembly.png" alt="Gravity Light planetary gear train CAD assembly"></div>
+        <div class="pcard-body">
+          <h3>Gravity Light — Sustainable Energy Device</h3>
+          <p>2734.7:1 compound planetary gear train converting a descending mass into 227 RPM output; built and tested a working prototype.</p>
+          <div class="tag-row"><span class="tag">Inventor</span><span class="tag">Gear Design</span><span class="tag">Prototype Test</span></div>
+          <span class="pcard-link">Read the case study</span>
+        </div>
+      </a>
+
+      <a class="pcard reveal" href="projects.html#screw-press">
+        <div class="pcard-img"><img src="images/screw-press/assembly.png" alt="20 kN single-column screw press assembly"></div>
+        <div class="pcard-body">
+          <h3>20 kN Single-Column Screw Press</h3>
+          <p>Non-linear FEA of a cast-iron base frame; SF 1.5, Von Mises stress below 200 MPa, ~1 mm peak displacement.</p>
+          <div class="tag-row"><span class="tag">Fusion 360</span><span class="tag">Non-Linear FEA</span><span class="tag">Casting DFM</span></div>
+          <span class="pcard-link">Read the case study</span>
+        </div>
+      </a>
+
+      <a class="pcard reveal" href="projects.html#topology-bellcrank">
+        <div class="pcard-img"><img src="images/topology-bellcrank/bellcrank.png" alt="Topology-optimized bell crank final CAD model"></div>
+        <div class="pcard-body">
+          <h3>Topology Optimization — Bell Crank</h3>
+          <p>DfAM-compliant reconstruction under 20 kN load; 74.7 MPa Von Mises, 0.374 mm displacement, 5.4× buckling margin.</p>
+          <div class="tag-row"><span class="tag">Topology Opt.</span><span class="tag">Nastran</span><span class="tag">DFAM</span></div>
+          <span class="pcard-link">Read the case study</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ================= PARTS PRACTICE TEASER ================= -->
+  <section class="section wrap" id="parts-teaser">
+    <div class="eyebrow">Machine Element Modelling</div>
+    <h2>SolidWorks practice — building modelling speed</h2>
+    <p class="case-intro">
+      Alongside the validated engineering case studies above, a running set of standard machine
+      elements rebuilt from drawing references to sharpen SolidWorks modelling speed and feature-based
+      part construction — clevises, flanged fittings, gears, and fasteners.
+    </p>
+    <div class="parts-grid">
+      <div class="part-item reveal"><div class="part-img"><img src="images/parts/spur-gear.png" alt="Spur gear, SolidWorks"></div><div class="part-cap"><span>Spur Gear</span><span class="p-no">M1.5</span></div></div>
+      <div class="part-item reveal"><div class="part-img"><img src="images/parts/clevis-yoke.png" alt="Clevis yoke bracket, SolidWorks"></div><div class="part-cap"><span>Clevis Yoke</span><span class="p-no">04</span></div></div>
+      <div class="part-item reveal"><div class="part-img"><img src="images/parts/cross-flange-fitting.png" alt="Cross flange pipe fitting, SolidWorks"></div><div class="part-cap"><span>Flange Fitting</span><span class="p-no">10</span></div></div>
+      <div class="part-item reveal"><div class="part-img"><img src="images/parts/hex-nut-slotted.png" alt="Slotted hex nut, SolidWorks"></div><div class="part-cap"><span>Slotted Hex Nut</span><span class="p-no">08</span></div></div>
+    </div>
+    <p style="margin-top:20px;"><a class="pcard-link" href="projects.html#parts-gallery" style="font-size:14px;">See the full set of 11 parts</a></p>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="footer wrap" id="contact">
+    <div class="eyebrow">Contact</div>
+    <div class="footer-grid">
+      <div class="contact-list">
+        <div><span class="clabel">Email</span><a href="mailto:fahadalhadi283055@gmail.com">fahadalhadi283055@gmail.com</a></div>
+        <div><span class="clabel">Phone</span><a href="tel:+352661596121">+352 661 596 121</a></div>
+        <div><span class="clabel">LinkedIn</span><a href="https://www.linkedin.com/in/fahad-al-hadi-99b735118/" target="_blank" rel="noopener">fahad-al-hadi-99b735118</a></div>
+        <div><span class="clabel">Location</span><span>Differdange, Luxembourg</span></div>
+      </div>
+      <a class="btn" href="resume.pdf">Download Full CV ↓</a>
+    </div>
+    <div class="foot-bottom">
+      <span>© Fahad Al Hadi — Mechanical Design Portfolio</span>
+      <span>DWG NO. FAH-PORTFOLIO-2026 · REV. 2</span>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
